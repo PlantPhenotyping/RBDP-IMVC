@@ -1,0 +1,17 @@
+{
+  "loss": {
+    "structure_weight": 0.1,
+    "auxiliary_weight": 1.0
+  },
+  "ablation": {
+    "name": "a6_conflict_safe",
+    "description": "Primary-anchored optimization that projects the robust auxiliary gradient only when it conflicts with the Masked-DCP objective.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "conflict_safe": true,
+    "reliability": false,
+    "fusion": "concat"
+  }
+}

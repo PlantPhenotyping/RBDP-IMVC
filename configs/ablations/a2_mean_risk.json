@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a2_mean_risk",
+    "description": "Heteroscedastic prediction and cycle consistency with uniform environment weighting.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": false,
+    "reliability": false,
+    "fusion": "concat"
+  }
+}

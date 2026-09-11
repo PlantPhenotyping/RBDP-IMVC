@@ -1,0 +1,10 @@
+{
+  "dataset": "NoisyMNIST",
+  "normalization": "legacy",
+  "subset": "tune+test",
+  "view_indices": [0, 1],
+  "view_names": ["clean", "noisy"],
+  "input_shapes": [[20000, 784], [20000, 784]],
+  "labels_shape": [20000],
+  "n_classes": 10
+}

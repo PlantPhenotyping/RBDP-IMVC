@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a4_zero_gate",
+    "description": "Risk-weighted source prediction followed by confidence scaling of missing-view blocks.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": false,
+    "reliability": true,
+    "fusion": "gated_concat"
+  }
+}

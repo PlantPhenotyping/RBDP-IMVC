@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a5_rbdp",
+    "description": "RBDP-IMVC with environment risk balancing and self-assessed fallback completion in the concatenated latent space.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "reliability": true,
+    "fusion": "fallback_concat"
+  }
+}

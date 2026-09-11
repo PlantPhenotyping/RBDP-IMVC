@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "datasets": ["Caltech101-20", "Scene-15", "LandUse-21"],
+  "normalization": "legacy",
+  "mechanisms": ["balanced_mcar", "view_skew", "correlated", "feature_dependent"],
+  "incomplete_rates": [0.5, 0.9],
+  "observation_rate_within_incomplete": 0.5,
+  "mask_seed": 1,
+  "split_seed": 2026,
+  "split_fractions": [0.7, 0.1, 0.2],
+  "correlation_strength": 0.8,
+  "hash_dataset_files": true
+}

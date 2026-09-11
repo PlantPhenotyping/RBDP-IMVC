@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a1_masked_dcp",
+    "description": "Masked-DCP baseline using all observed views for reconstruction and all co-observed pairs for deterministic prediction.",
+    "complete_only": false,
+    "heteroscedastic": false,
+    "cycle": false,
+    "groupdro": false,
+    "reliability": false,
+    "fusion": "concat"
+  }
+}

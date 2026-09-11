@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a4_source_weighting",
+    "description": "Weights multiple source predictions by self-assessed risk while preserving DCP concatenation and block scale.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": false,
+    "reliability": true,
+    "fusion": "concat"
+  }
+}

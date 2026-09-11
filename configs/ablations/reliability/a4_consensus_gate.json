@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a4_consensus_gate",
+    "description": "Reliability-weighted fusion of observed and predicted views into one consensus representation.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": false,
+    "reliability": true,
+    "fusion": "consensus"
+  }
+}

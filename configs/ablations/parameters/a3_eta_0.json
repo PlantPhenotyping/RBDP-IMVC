@@ -1,0 +1,13 @@
+{
+  "ablation": {
+    "name": "a3_eta0",
+    "description": "Uniform-weight control obtained by setting the GroupDRO update rate to zero.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "reliability": false,
+    "fusion": "concat"
+  },
+  "loss": {"groupdro_eta": 0.0}
+}

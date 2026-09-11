@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+.pytest_cache/
+.venv/
+venv/
+outputs/
+*.egg-info/
+data/NoisyMNIST.mat

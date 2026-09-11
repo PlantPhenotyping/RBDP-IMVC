@@ -1,0 +1,16 @@
+{
+  "reliability": {
+    "risk_normalization": "per_sample_range",
+    "source_temperature": 1.0
+  },
+  "ablation": {
+    "name": "a5_adaptive_reliability",
+    "description": "Keeps the A4 training objective and fuses source predictions using sample-range-normalized path risk at inference.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "reliability": true,
+    "fusion": "concat"
+  }
+}

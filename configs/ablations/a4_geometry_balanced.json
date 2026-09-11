@@ -1,0 +1,15 @@
+{
+  "loss": {
+    "structure_weight": 0.1
+  },
+  "ablation": {
+    "name": "a4_geometry_balanced",
+    "description": "Full training objective with heteroscedastic cycle prediction, environment risk balancing, and scale-normalized cosine-geometry preservation.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "reliability": false,
+    "fusion": "concat"
+  }
+}

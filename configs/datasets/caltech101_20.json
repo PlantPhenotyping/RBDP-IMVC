@@ -1,0 +1,9 @@
+{
+  "dataset": "Caltech101-20",
+  "normalization": "legacy",
+  "view_indices": [3, 4, 5],
+  "view_names": ["hog", "gist", "lbp"],
+  "input_shapes": [[2386, 1984], [2386, 512], [2386, 928]],
+  "labels_shape": [2386],
+  "n_classes": 20
+}

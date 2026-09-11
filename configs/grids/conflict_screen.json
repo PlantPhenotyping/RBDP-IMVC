@@ -1,0 +1,44 @@
+{
+  "description": "Single-seed stop/go screen for primary-anchored conflict-safe auxiliary optimization.",
+  "grids": [
+    {
+      "experiment": "pilot_caltech_shift",
+      "protocol": "inductive_missingness_shift",
+      "ablation": ["a1_masked_dcp", "a6_conflict_safe"],
+      "dataset": "Caltech101-20",
+      "split_seed": 2026,
+      "train_mechanism": "balanced_mcar",
+      "train_incomplete_rate": 0.5,
+      "test_mechanism": "view_skew",
+      "test_incomplete_rate": 0.9,
+      "training_seed": 10,
+      "epochs": 50
+    },
+    {
+      "experiment": "pilot_scene_shift",
+      "protocol": "inductive_missingness_shift",
+      "ablation": ["a1_masked_dcp", "a6_conflict_safe"],
+      "dataset": "Scene-15",
+      "split_seed": 2026,
+      "train_mechanism": "balanced_mcar",
+      "train_incomplete_rate": 0.5,
+      "test_mechanism": "view_skew",
+      "test_incomplete_rate": 0.9,
+      "training_seed": 10,
+      "epochs": 50
+    },
+    {
+      "experiment": "pilot_landuse_shift",
+      "protocol": "inductive_missingness_shift",
+      "ablation": ["a1_masked_dcp", "a6_conflict_safe"],
+      "dataset": "LandUse-21",
+      "split_seed": 2026,
+      "train_mechanism": "balanced_mcar",
+      "train_incomplete_rate": 0.5,
+      "test_mechanism": "view_skew",
+      "test_incomplete_rate": 0.9,
+      "training_seed": 10,
+      "epochs": 50
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a0_dcp_compatible",
+    "description": "DCP-compatible control using complete samples, deterministic bidirectional prediction, and equally weighted concatenation.",
+    "complete_only": true,
+    "heteroscedastic": false,
+    "cycle": false,
+    "groupdro": false,
+    "reliability": false,
+    "fusion": "concat"
+  }
+}

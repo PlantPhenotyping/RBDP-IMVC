@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "experiment": "pilot_scene_shift",
+  "protocol": "inductive_missingness_shift",
+  "dataset": {
+    "name": "Scene-15",
+    "normalization": "legacy",
+    "view_indices": [0, 1, 2]
+  },
+  "split": {
+    "seed": 2026,
+    "fractions": [0.7, 0.1, 0.2]
+  },
+  "masks": {
+    "observation_rate_within_incomplete": 0.5,
+    "correlation_strength": 0.8,
+    "train": {
+      "mechanism": "balanced_mcar",
+      "incomplete_rate": 0.5,
+      "seed": 11
+    },
+    "validation": {
+      "mechanism": "view_skew",
+      "incomplete_rate": 0.5,
+      "seed": 12
+    },
+    "test": {
+      "mechanism": "view_skew",
+      "incomplete_rate": 0.9,
+      "seed": 13
+    }
+  },
+  "model": {
+    "hidden_dims": [256, 128],
+    "latent_dim": 32,
+    "predictor_hidden_dims": [64],
+    "batch_norm": true,
+    "min_log_variance": -8.0,
+    "max_log_variance": 3.0
+  },
+  "training": {
+    "seed": 10,
+    "epochs": 50,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0,
+    "gradient_clip": 5.0,
+    "start_prediction_epoch": 0
+  },
+  "loss": {
+    "reconstruction_weight": 1.0,
+    "pair_weight": 1.0,
+    "prediction_weight": 0.1,
+    "mi_alpha": 1.0,
+    "cycle_weight": 1.0,
+    "structure_weight": 0.0,
+    "groupdro_eta": 0.05,
+    "groupdro_update_frequency": "epoch",
+    "min_group_size": 16,
+    "stop_gradient": true
+  },
+  "reliability": {
+    "gamma": 1.0,
+    "risk_normalization": "none",
+    "source_temperature": 0.1,
+    "confidence_temperature": 0.1
+  },
+  "evaluation": {
+    "kmeans_seed": 0,
+    "kmeans_n_init": 20,
+    "min_pattern_count": 5
+  },
+  "runtime": {
+    "device": "auto",
+    "torch_num_threads": 4,
+    "save_checkpoint": true
+  }
+}

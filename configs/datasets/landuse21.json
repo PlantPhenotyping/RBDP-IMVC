@@ -1,0 +1,9 @@
+{
+  "dataset": "LandUse-21",
+  "normalization": "legacy",
+  "view_indices": [1, 2, 0],
+  "view_names": ["phog", "lbp", "gist"],
+  "input_shapes": [[2100, 59], [2100, 40], [2100, 20]],
+  "labels_shape": [2100],
+  "n_classes": 21
+}

@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a3_risk_balanced",
+    "description": "Heteroscedastic cycle-consistent prediction risks balanced across missingness environments with GroupDRO.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "reliability": false,
+    "fusion": "concat"
+  }
+}

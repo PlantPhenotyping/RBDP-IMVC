@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a4_reliability_only",
+    "description": "Uniform-environment training with low-confidence predictions interpolated toward the observed-view consensus.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": false,
+    "reliability": true,
+    "fusion": "fallback_concat"
+  }
+}

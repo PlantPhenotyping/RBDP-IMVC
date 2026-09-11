@@ -1,0 +1,9 @@
+{
+  "dataset": "Scene-15",
+  "normalization": "legacy",
+  "view_indices": [0, 1, 2],
+  "view_names": ["gist", "phog", "lbp"],
+  "input_shapes": [[4485, 20], [4485, 59], [4485, 40]],
+  "labels_shape": [4485],
+  "n_classes": 15
+}

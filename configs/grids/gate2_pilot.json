@@ -1,0 +1,44 @@
+{
+  "description": "Gate 2 paired checkpoint evaluation: A4 equal-source inference versus A5 per-sample risk-normalized source weighting.",
+  "grids": [
+    {
+      "experiment": "pilot_caltech_shift",
+      "protocol": "inductive_missingness_shift",
+      "ablation": ["a4_geometry_balanced", "a5_adaptive_reliability"],
+      "dataset": "Caltech101-20",
+      "split_seed": 2026,
+      "train_mechanism": "balanced_mcar",
+      "train_incomplete_rate": 0.5,
+      "test_mechanism": "view_skew",
+      "test_incomplete_rate": 0.9,
+      "training_seed": [10, 11, 12, 13, 14],
+      "epochs": 50
+    },
+    {
+      "experiment": "pilot_scene_shift",
+      "protocol": "inductive_missingness_shift",
+      "ablation": ["a4_geometry_balanced", "a5_adaptive_reliability"],
+      "dataset": "Scene-15",
+      "split_seed": 2026,
+      "train_mechanism": "balanced_mcar",
+      "train_incomplete_rate": 0.5,
+      "test_mechanism": "view_skew",
+      "test_incomplete_rate": 0.9,
+      "training_seed": [10, 11, 12, 13, 14],
+      "epochs": 50
+    },
+    {
+      "experiment": "pilot_landuse_shift",
+      "protocol": "inductive_missingness_shift",
+      "ablation": ["a4_geometry_balanced", "a5_adaptive_reliability"],
+      "dataset": "LandUse-21",
+      "split_seed": 2026,
+      "train_mechanism": "balanced_mcar",
+      "train_incomplete_rate": 0.5,
+      "test_mechanism": "view_skew",
+      "test_incomplete_rate": 0.9,
+      "training_seed": [10, 11, 12, 13, 14],
+      "epochs": 50
+    }
+  ]
+}

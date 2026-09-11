@@ -1,0 +1,12 @@
+{
+  "ablation": {
+    "name": "a4_fallback_gate",
+    "description": "Risk-weighted source prediction with low-confidence blocks falling back toward the observed-view consensus.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": false,
+    "reliability": true,
+    "fusion": "fallback_concat"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ablation": {
+    "name": "a3_eta0p02",
+    "description": "GroupDRO update rate eta=0.02.",
+    "complete_only": false,
+    "heteroscedastic": true,
+    "cycle": true,
+    "groupdro": true,
+    "reliability": false,
+    "fusion": "concat"
+  },
+  "loss": {"groupdro_eta": 0.02}
+}
