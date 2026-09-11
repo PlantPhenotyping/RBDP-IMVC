@@ -5,9 +5,6 @@ Official implementation accompanying:
 **Risk-Balanced Bidirectional Prediction for Incomplete Multi-View Clustering
 under Missingness-Mechanism Shift**
 
-Repository placeholder:
-[github.com/USERNAME/RBDP-IMVC](https://github.com/USERNAME/RBDP-IMVC)
-
 RBDP-IMVC learns incomplete multi-view representations when the combinations
 of available views can change between training and deployment. Instead of
 reducing incompleteness to one missing-rate scalar, it represents each
